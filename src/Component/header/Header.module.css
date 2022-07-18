@@ -1,0 +1,79 @@
+.header {
+  background-color: #ffba00;
+  font-family: Helvetica, Arial, Roboto, sans-serif;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  display: block;
+}
+
+.navHeader {
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  .navHeader {
+    width: 936px;
+  }
+}
+
+.logo {
+  flex: 0.3 1 auto;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.logo a {
+  border-style: none;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 35px;
+}
+
+.navBar {
+  display: flex;
+  flex: 0.7 0 auto;
+  justify-content: flex-end;
+}
+
+.navItem {
+  display: block;
+  line-height: 45px;
+  padding: 0px 24px;
+}
+
+.navItem a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  float: none;
+  height: 100%;
+  font-size: 16px;
+  color: rgb(5, 5, 5);
+}
+.navItem :hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.navItem a span {
+  margin-left: 8px;
+  max-width: 130px;
+  height: 48px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: right;
+  overflow: hidden;
+  font-size: inherit;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-family: Helvetica, Arial, Roboto, sans-serif;
+}

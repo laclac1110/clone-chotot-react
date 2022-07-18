@@ -1,38 +1,36 @@
+:root {
+  --color-page: #ffba00;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: var(--color-page);
+  font-family: Helvetica, Arial, Roboto, sans-serif;
+  position: -webkit-sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  font-size: 0.875rem;
+  z-index: 1000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchBar {
+  background-color: var(--color-page);
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  top: 52px;
+  padding-bottom: 12px;
+  z-index: 100;
 }
